@@ -1,0 +1,6 @@
+
+    {
+  "explorer.compactFolders": false,
+  "workbench.tree.indent": 20, // Ajusta el indentado del árbol de archivos
+  "explorer.fileNesting.enabled": false // Desactiva la agrupación de archivos
+}

@@ -24,6 +24,7 @@
 ## Visual Structure
 
 - **Image**: Add a logo asset.
+![Dashboard](./public/prueba%201.png)
 - Learn the basic app router folders.
 
 ## Sidebar
@@ -32,3 +33,8 @@
   - Sidebar items.
   - Sidebar links.
   - Sidebar actions.
+
+- **Sidebar Sections**:
+  - Serach input.
+  - Sign components.
+
