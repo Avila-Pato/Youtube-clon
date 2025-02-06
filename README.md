@@ -1,17 +1,34 @@
-
 # 01 Setup
 
-## Configure environment 
-- Runtime (Bun)
-- package manager (Bun)
+## Configure Environment
 
-## Why Bun
-- more performant than NPM 
-- easily run typescript with ES6 imports 
-- less issues with dependencies than NPM
+- **Runtime**: Bun
+- **Package Manager**: Bun
 
-## Establish basuc run commands
-- `bun run dev`
-- `bun run build`
-- `bunx === npx`
+## Why Bun?
 
+- More performant than NPM.
+- Easily run TypeScript with ES6 imports.
+- Fewer dependency issues compared to NPM.
+
+## Basic Run Commands
+
+- `bun run dev`: Start the development server.
+- `bun run build`: Build the project.
+- `bunx === npx`: Execute packages similar to `npx`.
+
+---
+
+# 02 Basic Layout
+
+## Visual Structure
+
+- **Image**: Add a logo asset.
+- Learn the basic app router folders.
+
+## Sidebar
+
+- **Sidebar Sections**:
+  - Sidebar items.
+  - Sidebar links.
+  - Sidebar actions.
