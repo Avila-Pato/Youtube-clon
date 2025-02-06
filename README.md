@@ -19,7 +19,7 @@
 
 ---
 
-# 02 Basic Layout
+# 02 Basic Layout 
 
 ## Visual Structure
 
