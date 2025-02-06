@@ -43,3 +43,11 @@
   - Serach input.
   - Sign components.
 
+# 03 Authentication
+
+ - Integrate Clerk
+ - Add siggn in screens
+ - Add userButton
+ - Add middleware
+ - Use auth state on sidebar Sections
+ - Protect Routes
