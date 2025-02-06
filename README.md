@@ -27,7 +27,7 @@
 - Add a logo asset and basic dashboard.
 - Learn the basic app router folders.
 
--- 
+---
 
 # Image Reference
 ![Dashboard](./public/prueba%201.png)
