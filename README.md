@@ -23,9 +23,14 @@
 
 ## Visual Structure
 
-- **Image**: Add a logo asset.
-![Dashboard](./public/prueba%201.png)
+- **Image**:
+- Add a logo asset and basic dashboard.
 - Learn the basic app router folders.
+
+-- 
+
+# Image Reference
+![Dashboard](./public/prueba%201.png)
 
 ## Sidebar
 
