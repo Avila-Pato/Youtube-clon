@@ -23,13 +23,13 @@
 
 ## Estructura Visual  
 
-- **Imagen**:  
+
   - Agregar un logo y un panel de control básico.  
   - Aprender la estructura de carpetas del enrutador de la aplicación.  
 
 ---
 
-## Referencia de Imagen  
+## - **Imagen**:  
 ![Dashboard](./public/prueba%201.png)  
 
 ## Barra Lateral  
@@ -54,7 +54,7 @@
 - Usar el estado de autenticación en las secciones de la barra lateral.  
 - Proteger rutas.  
 
-## Referencias de Imagen  
+## - **Imagen**:  
 ![Auth](./public/1.jpeg)  
 ![Auth](./public/2.jpeg)  
 ![Auth](./public/3.jpeg)  
