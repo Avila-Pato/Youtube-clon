@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sidebar";
 import { FlameIcon, HomeIcon, PlaySquareIcon } from "lucide-react";
 import Link from "next/link";
+import { useAuth, useClerk } from "@clerk/nextjs";
 
 const items = [
   {
@@ -30,6 +31,9 @@ const items = [
 ];
 
 const MainSection = () => {
+  const clerk = useClerk();
+  const { isSignedIn } = useAuth();
+
   return (
     <SidebarGroup>
       <SidebarGroupContent>
@@ -40,7 +44,13 @@ const MainSection = () => {
                 tooltip={item.title}
                 asChild
                 isActive={false} // cambiar el look eh la url
-                onClick={() => {}} // hacer algo con el click
+                // onClick={() => {}} con el onCLick si el usuario no esta logueado lo manda al login y se logue para de esta manera pueda ver las subcrippciones
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (item.auth && !isSignedIn) {
+                    clerk.openSignIn();
+                  }
+                }}
               >
                 <Link href={item.url} className="flex items-center gap-4">
                   <item.icon />

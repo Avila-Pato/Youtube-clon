@@ -51,3 +51,12 @@
  - Add middleware
  - Use auth state on sidebar Sections
  - Protect Routes
+
+ # Image Reference
+![Auth](./public/1.jpeg)
+
+ # Image Reference
+![Auth](./public/2.jpeg)
+
+ # Image Reference
+![Auth](./public/3.jpeg)
