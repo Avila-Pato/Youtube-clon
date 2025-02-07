@@ -61,7 +61,7 @@
 
 ---
 
-# 01 Configurando base de datos 
+# 04 Configurando base de datos 
 
 - Creado un PostgreAQL database *(www.neon.tech)*.
 - Configurando DrizzleORM.
@@ -75,5 +75,15 @@
 - solo ORM con ambos tipos relanionales y SQL-like query APIS
 - serveless por defecto
 - nos fuerza a entender nuestras querys
+
+---
+
+# 05 Configurando Webhook sync 
+
+- crear una cuenta ngrok
+- obtener un dominio estatico(no requerido)
+- agregar script al local run y la app
+- crear los usuarios webhook
+- conectar la webhook a el dashboard de clerk 
 
 
