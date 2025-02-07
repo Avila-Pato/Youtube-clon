@@ -58,3 +58,22 @@
 ![Auth](./public/1.jpeg)  
 ![Auth](./public/2.jpeg)  
 ![Auth](./public/3.jpeg)  
+
+---
+
+# 01 Configurando base de datos 
+
+- Creado un PostgreAQL database *(www.neon.tech)*.
+- Configurando DrizzleORM.
+- Creando un schema para la base de datos
+- Migrando los cambios a la base de datos
+## - **Imagen**: 
+![Database](./public/schema.png)
+
+## ¿Por qué DrizzleORM?
+
+- solo ORM con ambos tipos relanionales y SQL-like query APIS
+- serveless por defecto
+- nos fuerza a entender nuestras querys
+
+
