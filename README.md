@@ -1,62 +1,60 @@
-# 01 Setup
+# 01 Configuración
 
-## Configure Environment
+## Configurar el Entorno
 
-- **Runtime**: Bun
-- **Package Manager**: Bun
+- **Tiempo de ejecución**: Bun  
+- **Gestor de paquetes**: Bun  
 
-## Why Bun?
+## ¿Por qué usar Bun?
 
-- More performant than NPM.
-- Easily run TypeScript with ES6 imports.
-- Fewer dependency issues compared to NPM.
+- Más eficiente que NPM.  
+- Permite ejecutar TypeScript con importaciones ES6 de manera sencilla.  
+- Menos problemas de dependencias en comparación con NPM.  
 
-## Basic Run Commands
+## Comandos Básicos
 
-- `bun run dev`: Start the development server.
-- `bun run build`: Build the project.
-- `bunx === npx`: Execute packages similar to `npx`.
-
----
-
-# 02 Basic Layout 
-
-## Visual Structure
-
-- **Image**:
-- Add a logo asset and basic dashboard.
-- Learn the basic app router folders.
+- `bun run dev`: Inicia el servidor de desarrollo.  
+- `bun run build`: Compila el proyecto.  
+- `bunx === npx`: Ejecuta paquetes de manera similar a `npx`.  
 
 ---
 
-# Image Reference
-![Dashboard](./public/prueba%201.png)
+# 02 Diseño Básico  
 
-## Sidebar
+## Estructura Visual  
 
-- **Sidebar Sections**:
-  - Sidebar items.
-  - Sidebar links.
-  - Sidebar actions.
+- **Imagen**:  
+  - Agregar un logo y un panel de control básico.  
+  - Aprender la estructura de carpetas del enrutador de la aplicación.  
 
-- **Sidebar Sections**:
-  - Serach input.
-  - Sign components.
+---
 
-# 03 Authentication
+## Referencia de Imagen  
+![Dashboard](./public/prueba%201.png)  
 
- - Integrate Clerk
- - Add siggn in screens
- - Add userButton
- - Add middleware
- - Use auth state on sidebar Sections
- - Protect Routes
+## Barra Lateral  
 
- # Image Reference
-![Auth](./public/1.jpeg)
+- **Secciones de la Barra Lateral**:  
+  - Elementos de la barra lateral.  
+  - Enlaces de la barra lateral.  
+  - Acciones dentro de la barra lateral.  
 
- # Image Reference
-![Auth](./public/2.jpeg)
+- **Otras Secciones**:  
+  - Campo de búsqueda.  
+  - Componentes de autenticación.  
 
- # Image Reference
-![Auth](./public/3.jpeg)
+---
+
+# 03 Autenticación  
+
+- Integrar Clerk.  
+- Agregar pantallas de inicio de sesión.  
+- Incluir el `userButton`.  
+- Añadir middleware.  
+- Usar el estado de autenticación en las secciones de la barra lateral.  
+- Proteger rutas.  
+
+## Referencias de Imagen  
+![Auth](./public/1.jpeg)  
+![Auth](./public/2.jpeg)  
+![Auth](./public/3.jpeg)  
