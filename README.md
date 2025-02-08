@@ -80,10 +80,15 @@
 
 # 05 Configurando Webhook sync 
 
-- crear una cuenta ngrok
+- crear una cuenta ngrok( permite exponer un servidor local a Internet mediante túneles seguros )
 - obtener un dominio estatico(no requerido)
 - agregar script al local run y la app
 - crear los usuarios webhook
 - conectar la webhook a el dashboard de clerk 
 
+## - **Imagen Usuario guardado Drizzle**:
+
+![Webhook](./public/webhook1.png)
+## - **Imagen configurando  webhook para subir al usuario a la base de datos  **:
+![Webhook](./public/webhook3.png)
 
