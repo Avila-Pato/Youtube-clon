@@ -128,7 +128,7 @@
 
 ![Uplash](./public/uplash.png)
 
-🔹 Protege los endpoints de la API para que solo los usuarios autenticados puedan acceder.
-🔹 Evita ataques de fuerza bruta o abusos mediante rate limiting.
-🔹 Añade datos del usuario al contexto, facilitando el acceso en otras partes del código.
+- 🔹 Protege los endpoints de la API para que solo los usuarios autenticados puedan acceder.
+- 🔹 Evita ataques de fuerza bruta o abusos mediante rate limiting.
+- 🔹 Añade datos del usuario al contexto, facilitando el acceso en otras partes del código.
 
