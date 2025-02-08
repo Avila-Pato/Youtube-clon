@@ -120,7 +120,15 @@
 
 - Agrega auth al contexto tRPC
 - Agrega procedimientos protegidos
-- Agreaga una limitacion a la tasa 
+- Agrega una limitacion a la tasa de peticiones usando redis
 
+--- 
 
+## - **Configurando autentificacion del usuario**: 
+
+![Uplash](./public/uplash.png)
+
+🔹 Protege los endpoints de la API para que solo los usuarios autenticados puedan acceder.
+🔹 Evita ataques de fuerza bruta o abusos mediante rate limiting.
+🔹 Añade datos del usuario al contexto, facilitando el acceso en otras partes del código.
 
