@@ -108,7 +108,6 @@
 - Integración sencilla con Next.js, Express, y otros frameworks.
 - Menos código repetitivo en validaciones y respuestas.
 - Ecosistema ligero sin dependencias innecesarias.  
-
--
+- Hook familiares (use  query, useMutation etc)
 
 
