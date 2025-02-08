@@ -88,17 +88,16 @@
 - crear los usuarios webhook
 - conectar la webhook a el dashboard de clerk 
 
-## - ** Usuario guardado Drizzle**:
-
-![Webhook](./public/webhook1.png)
-
----
-
 ## - ** configurando  webhook para subir al usuario a la base de datos  **:
 ![Webhook](./public/webhook3.png)
 
 ---
 
+## - ** Usuario guardado Drizzle**:
+
+![Webhook](./public/webhook1.png)
+
+---
 
 # 06 Configurando TRPC( librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
 
