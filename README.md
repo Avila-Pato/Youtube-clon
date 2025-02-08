@@ -72,9 +72,10 @@
 
 ## ¿Por qué DrizzleORM?
 
-- solo ORM con ambos tipos relanionales y SQL-like query APIS
-- serveless por defecto
-- nos fuerza a entender nuestras querys
+- Compatibilidad con múltiples bases de datos (PostgreSQL, MySQL, SQLite)
+- Único ORM con soporte para SQL relacional y consultas tipo SQL-like.
+- Optimizado para entornos serverless por defecto.
+- Forza a escribir consultas explícitas, mejorando la comprensión del código.
 
 ---
 
@@ -82,7 +83,8 @@
 
 - crear una cuenta ngrok( permite exponer un servidor local a Internet mediante túneles seguros )
 - obtener un dominio estatico(no requerido)
-- agregar script al local run y la app
+- agregar script al local run y la app( ver Package.json )
+
 - crear los usuarios webhook
 - conectar la webhook a el dashboard de clerk 
 
@@ -94,4 +96,19 @@
 
 ## - ** configurando  webhook para subir al usuario a la base de datos  **:
 ![Webhook](./public/webhook3.png)
+
+---
+
+
+# 06 Configurando TRPC( librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
+
+## ¿Por qué TRPC 
+
+- Elimina la necesidad de definir manualmente endpoints en el backend.
+- Integración sencilla con Next.js, Express, y otros frameworks.
+- Menos código repetitivo en validaciones y respuestas.
+- Ecosistema ligero sin dependencias innecesarias.  
+
+-
+
 
