@@ -81,7 +81,7 @@
 
 # 05 Configurando Webhook sync 
 
-- crear una cuenta ngrok( permite exponer un servidor local a Internet mediante túneles seguros )
+- crear una cuenta ngrok( permite exponer un servidor local a Internet mediante túneles seguros "Https")
 - obtener un dominio estatico(no requerido)
 - agregar script al local run y la app( ver Package.json )
 
@@ -99,7 +99,7 @@
 
 ---
 
-# 06 Configurando TRPC( librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
+# 06 Configurando TRPC( esta es una librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
 
 ## ¿Por qué TRPC 
 
