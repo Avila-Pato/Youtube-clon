@@ -86,9 +86,12 @@
 - crear los usuarios webhook
 - conectar la webhook a el dashboard de clerk 
 
-## - **Imagen Usuario guardado Drizzle**:
+## - ** Usuario guardado Drizzle**:
 
 ![Webhook](./public/webhook1.png)
-## - **Imagen configurando  webhook para subir al usuario a la base de datos  **:
+
+---
+
+## - ** configurando  webhook para subir al usuario a la base de datos  **:
 ![Webhook](./public/webhook3.png)
 
