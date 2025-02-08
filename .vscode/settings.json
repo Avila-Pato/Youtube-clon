@@ -2,5 +2,9 @@
     {
   "explorer.compactFolders": false,
   "workbench.tree.indent": 20, // Ajusta el indentado del árbol de archivos
-  "explorer.fileNesting.enabled": false // Desactiva la agrupación de archivos
+  "explorer.fileNesting.enabled": false, // Desactiva la agrupación de archivos
+   "typescript.tsdk": "node_modules/typescript/lib", // Indica a VS Code que use la versión de TypeScript instalada en el proyecto en lugar del typecript global 
+
+
+  "typescript.enablePromptUseWorkspaceTsdk": true // Habilita un mensaje en VS Code que te pregunta si quieres usar la versión de TypeScript del workspace (proyecto) en vez de la global. poner allow
 }

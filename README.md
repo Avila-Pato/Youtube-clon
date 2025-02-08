@@ -99,7 +99,7 @@
 
 ---
 
-# 06 Configurando TRPC( esta es una librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
+# 06 Instalando TRPC( esta es una librería que permite comunicar el frontend y el backend sin necesidad de definir APIs REST)
 
 ## ¿Por qué TRPC 
 
@@ -108,5 +108,19 @@
 - Menos código repetitivo en validaciones y respuestas.
 - Ecosistema ligero sin dependencias innecesarias.  
 - Hook familiares (use  query, useMutation etc)
+[Para la instalacion sigue la siguiente documentacion](https://trpc.io/docs/client/react/server-components)
+
+## - **Imagen**: 
+
+![Trpc](./public/trpc.png)
+
+--- 
+
+# 07 Configurando TRP para nuestro projecto
+
+- Agrega auth al contexto tRPC
+- Agrega procedimientos protegidos
+- Agreaga una limitacion a la tasa 
+
 
 
