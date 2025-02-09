@@ -132,3 +132,11 @@
 - 🔹 Evita ataques de fuerza bruta o abusos mediante rate limiting.
 - 🔹 Añade datos del usuario al contexto, facilitando el acceso en otras partes del código.
 
+# 08 Categoria de videos
+
+- agregar un schema para crear las categorias
+- push para cambiar las categorias en la base de datos
+- sembrar seed para las  categorias
+- Organizar las rutas tRPC
+- obtener fetch de las categorias
+- crear un componente para mostrar las categorias

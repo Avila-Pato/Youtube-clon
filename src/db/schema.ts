@@ -21,3 +21,12 @@ export const users = pgTable(
   // Evita que haya valores repetidos en la columna clerk_id.
   (t) => [uniqueIndex("users_clerk_id_idx").on(t.clerkId)]
 );
+
+// creando tabla para las categorias
+export const categories = pgTable("categories", {
+  id: uuid("id").primaryKey().defaultRandom(),
+  name: text("name").notNull().unique(),
+  description: text("description"),
+  createdAt: timestamp("created_at").notNull().defaultNow(),
+  updatedAt: timestamp("updated_at").notNull().defaultNow(),
+});
