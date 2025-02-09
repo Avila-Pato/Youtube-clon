@@ -2,6 +2,7 @@
 
 import { FilterCarousel } from "@/components/filter-carousel";
 import { trpc } from "@/trpc/client";
+import { useRouter } from "next/navigation";
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 
@@ -11,7 +12,7 @@ interface CategoriesSectionProps {
 
 export const CategoriesSection = ({ categoryId }: CategoriesSectionProps) => {
   return (
-    <Suspense fallback={<div>Loading...</div>}>
+    <Suspense fallback={<CategoriesSkeleton />}>
       <ErrorBoundary fallback={<div>Something went wrong</div>}>
         <CategoriesSectionSuspense categoryId={categoryId} />
       </ErrorBoundary>
@@ -19,15 +20,31 @@ export const CategoriesSection = ({ categoryId }: CategoriesSectionProps) => {
   );
 };
 
+const CategoriesSkeleton = () => {
+  return <FilterCarousel isLoading data={[]} onSelect={() => {}} />;
+};
+
 export const CategoriesSectionSuspense = ({
   categoryId,
 }: CategoriesSectionProps) => {
   const [categories] = trpc.categories.getMany.useSuspenseQuery();
+  const router = useRouter();
 
   const data = categories.map((category) => ({
     value: category.id,
     label: category.name,
   }));
 
-  return <FilterCarousel value={categoryId} data={data} />;
+  const onSelect = (value: string | null) => {
+    const url = new URL(window.location.href);
+
+    if (value) {
+      url.searchParams.set("categoryId", value);
+    } else {
+      url.searchParams.delete("categoryId");
+    }
+    router.push(url.toString());
+  };
+
+  return <FilterCarousel onSelect={onSelect} value={categoryId} data={data} />;
 };

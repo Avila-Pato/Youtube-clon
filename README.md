@@ -140,3 +140,5 @@
 - Organizar las rutas tRPC
 - obtener fetch de las categorias
 - crear un componente para mostrar las categorias
+
+![Url](./public/url.png)
