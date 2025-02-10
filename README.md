@@ -142,3 +142,11 @@
 - crear un componente para mostrar las categorias
 
 ![Url](./public/url.png)
+
+# 09 Layout studio
+
+- create ruta pra el grupo de studio
+- crear un layout studio
+- proteger las rutas de studio
+
+![Profile](./public/profile.jpeg)
