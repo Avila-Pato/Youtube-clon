@@ -145,7 +145,7 @@
 
 # 09 Layout studio
 
-- create ruta pra el grupo de studio
+- crear ruta para de studio
 - crear un layout studio
 - proteger las rutas de studio
 
