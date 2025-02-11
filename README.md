@@ -150,3 +150,14 @@
 - proteger las rutas de studio
 
 ![Profile](./public/profile.jpeg)
+
+# 10 video Studio
+
+- Crear un schema ara los videos
+- push para cambiar los videos en la base de datos
+- crear  un procedimeinto para el studio
+- agregar creacion de grabacion de video
+
+![videopage](./public/schemavideos.png)
+![videopage](./public/tabla.jpeg)
+![videopage](./public/videoapge.jpeg)
