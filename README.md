@@ -155,7 +155,7 @@
 
 - Crear un schema ara los videos
 - push para cambiar los videos en la base de datos
-- crear  un procedimeinto para el studio
+- crear  un procedimiento para el studio
 - agregar creacion de grabacion de video
 
 ![videopage](./public/schemavideos.png)
