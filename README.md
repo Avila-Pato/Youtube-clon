@@ -161,3 +161,12 @@
 ![videopage](./public/schemavideos.png)
 ![videopage](./public/tabla.jpeg)
 ![videopage](./public/videoapge.jpeg)
+
+# 11 Infinite loading
+
+- Agregar suspense y error boundaries
+- crear un infiniteScroll componente y que sea reutilizable
+- demostrar el infintte scroll 
+
+![InfiniteScroll](./public/lazy.jpeg)
+![InfiniteScroll](./public/lazy2.jpeg)
