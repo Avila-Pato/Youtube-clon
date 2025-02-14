@@ -170,3 +170,17 @@
 
 ![InfiniteScroll](./public/lazy.jpeg)
 ![InfiniteScroll](./public/lazy2.jpeg)
+
+# 12 integracion de Mux
+
+- Create un responsivo modelo
+- crear una cuenta de Mux
+- crear un procedimiento para subir el video a Mux
+- crear un uplaod mdoal para subir el video
+
+--- 
+
+# mux tiene un limite de almacenamiento en torno a que borrara lso videos despues de 24 horas
+
+
+![Mux](./public/mux.jpeg)
