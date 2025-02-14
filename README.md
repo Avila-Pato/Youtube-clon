@@ -180,7 +180,7 @@
 
 --- 
 
-# mux tiene un limite de almacenamiento en torno a que borrara lso videos despues de 24 horas
+# mux como cuenta free  tiene un limite de horas en donde alamcena el video en torno a  24 horas borrara los videos.
 
 
 ![Mux](./public/mux.jpeg)
