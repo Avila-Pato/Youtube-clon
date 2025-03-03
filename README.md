@@ -184,3 +184,17 @@
 
 
 ![Mux](./public/mux.jpeg)
+
+
+# 13 Mux Webbhooks
+
+- Actualizar el shame del video
+- push a la base de datos para laos cambios
+- manejar vide.asset.ready
+ --- actualizar status
+- manejar video.asset.deleted
+ ---- borrar desde base de datos
+- manejat video.asset.track.ready
+ ---- actualizar trackId y trackStatus
+ 
+  
