@@ -1,5 +1,7 @@
 import { relations } from "drizzle-orm";
 import {
+  integer,
+  pgEnum,
   pgTable,
   text,
   timestamp,
@@ -39,6 +41,11 @@ export const categoriesRelations = relations(categories, ({ many }) => ({
   videos: many(videos),
 }));
 
+export const videoVisibility = pgEnum("video_visibility", [
+  "private",
+  "public"
+])
+
 // Tabla de videos
 export const videos = pgTable("videos", {
   id: uuid("id").primaryKey().defaultRandom(),
@@ -54,6 +61,8 @@ export const videos = pgTable("videos", {
 
   thumbnailUrl: text("thumbnail.url"),
   previewUrl: text("preview_url"),
+  duration: integer("duration").default(0).notNull(),
+  visibility: videoVisibility("visibility").default("private").notNull(),
 
   userId: uuid("user_id")
     .notNull()

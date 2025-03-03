@@ -2,6 +2,7 @@
 import { InfiniteScroll } from "@/components/infinite-scroll";
 import { DEFAULT_LIMIT } from "@/constants";
 import { trpc } from "@/trpc/client";
+import {format } from "date-fns"
 import { Suspense } from "react";
 import { ErrorBoundary } from "react-error-boundary";
 import {
@@ -14,6 +15,8 @@ import {
 } from "@/components/ui/table";
 import Link from "next/link";
 import VideoThumbail from "@/modules/videos/ui/components/video-thumbail";
+import { snakeCaseToTtile } from "@/lib/utils";
+import { Globe2Icon, LockIcon } from "lucide-react";
 
 export const VideosSection = () => {
   return (
@@ -44,7 +47,7 @@ const VideosSectionSuspense = () => {
               <TableHead className=" pl-6 w-[510px]">Video</TableHead>
               <TableHead className="">Visibilidad</TableHead>
               <TableHead className="">Status</TableHead>
-              <TableHead className="">Fecha</TableHead>
+              <TableHead className="">fecha</TableHead>
               <TableHead className="text-right pr-6">Vistas</TableHead>
               <TableHead className="text-right ">Comentarios</TableHead>
               <TableHead className="text-right ">Likes</TableHead>
@@ -65,14 +68,38 @@ const VideosSectionSuspense = () => {
                       <div className="relative aspect-video w-36 shrink-0">
                       <VideoThumbail 
                       imageUrl={video.thumbnailUrl}
-                      previewUrl={video.previewUrl} 
-                      title={video.title}/>
+                      previewUrl={video.previewUrl}
+                      duration={video.duration || 0} 
+                      title={video.title}
+                      />
+                      </div>
+                      <div className="flex flex-col overflow-hidden gap-y-1">
+                            <span className="text-sm line-clamp-1">{video.title}</span>
+                            <span className="text-xs text-muted-foreground line-clamp-1">
+                              {video.description || "No description"}
+                              </span>
                       </div>
                       </div>
                     </TableCell>
-                    <TableCell>Visibilidad</TableCell>
-                    <TableCell>Status</TableCell>
-                    <TableCell>Fecha</TableCell>
+                    <TableCell>
+                      <div className="flex items-center">
+                        {video.visibility === "private" ? (
+                          <LockIcon className="size-4 mr-2" />
+                        ): (
+                          <Globe2Icon className="size-4 mr-2" />
+                        )}
+                        {snakeCaseToTtile(video.visibility)}
+
+                      </div>
+                      </TableCell>
+                    <TableCell>
+                      <div className="flex items-center ">
+                        {snakeCaseToTtile(video.muxStatus || "error")}
+                      </div>
+                      </TableCell>
+                    <TableCell  className="text-sm truncate">
+                      {format(new Date(video.createdAt), "d MMM yyyy")}
+                      </TableCell>
                     <TableCell>Vistas</TableCell>
                     <TableCell>Comentarios</TableCell>
                     <TableCell>Likes</TableCell>
